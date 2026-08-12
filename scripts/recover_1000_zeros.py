@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from riemann_sysid.data import pnt_error_term, logarithmic_resample
 from riemann_sysid.spectral_estimation import ParametricSpectralEstimator
 
-CACHE_FILE = "riemann_zeros_1000.npy"
+CACHE_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "utils", "riemann_zeros_1000.npy")
 
 def fetch_1000_riemann_zeros() -> np.ndarray:
     """Fetch/compute the first 1000 Riemann zeros (imaginary parts gamma_k) with caching."""

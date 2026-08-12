@@ -3,7 +3,7 @@ import time
 import numpy as np
 import mpmath
 
-CACHE_FILE = "riemann_zeros_1000.npy"
+CACHE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "riemann_zeros_1000.npy")
 
 def Riemann_zero_approx(k: int) -> float:
     """

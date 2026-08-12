@@ -1,0 +1,19 @@
+# Python virtual environments & bytecode
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Data & cache artifacts
+riemann_zeros_1000.npy
+get-pip.py
+
+# Generated plot directories (optional to track or ignore)
+# plots/
+# plots_phase2/
+# plots_v3/
+
+# IDE & OS files
+.DS_Store
+.vscode/
+.idea/
