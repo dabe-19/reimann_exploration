@@ -61,6 +61,20 @@ class QuantumSystemIdentification:
                 
         return coeffs
 
+    def _cnot_gate(self, control: int, target: int) -> np.ndarray:
+        """Build full 2^N x 2^N CNOT matrix for control→target qubits."""
+        dim = self.dim
+        N = self.num_qubits
+        gate = np.zeros((dim, dim), dtype=np.complex128)
+        for i in range(dim):
+            bits = list(format(i, f'0{N}b'))
+            if bits[control] == '1':
+                # Flip target bit
+                bits[target] = '0' if bits[target] == '1' else '1'
+            j = int(''.join(bits), 2)
+            gate[j, i] = 1.0
+        return gate
+
     def ansatz_state(self, params: np.ndarray) -> np.ndarray:
         """
         Hardware-efficient ansatz state |psi(theta)> = U(theta)|0...0>.
@@ -71,6 +85,9 @@ class QuantumSystemIdentification:
         state[0] = 1.0  # Initial state |0...0>
         
         num_layers = len(params) // N
+        
+        # Pre-build CNOT gates (they don't depend on parameters)
+        cnot_gates = [self._cnot_gate(q, q + 1) for q in range(N - 1)]
         
         for layer in range(num_layers):
             # Single-qubit Ry rotations
@@ -85,11 +102,9 @@ class QuantumSystemIdentification:
                 
             state = u_layer @ state
             
-            # Simple CNOT entangling chain
-            for q in range(N - 1):
-                # Apply CNOT between qubit q and q+1
-                # Standard matrix operation
-                pass  # State remains normalized
+            # Apply CNOT entangling chain
+            for cnot in cnot_gates:
+                state = cnot @ state
                 
         return state / np.linalg.norm(state)
 

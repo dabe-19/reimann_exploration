@@ -3,8 +3,8 @@ import time
 import numpy as np
 import mpmath
 import matplotlib.pyplot as plt
-from riemann_sysid.data import pnt_error_term, logarithmic_resample
-from riemann_sysid.spectral_estimation import ParametricSpectralEstimator
+from trng_auditor.core.data import pnt_error_term, logarithmic_resample
+from trng_auditor.core.spectral_estimation import ParametricSpectralEstimator
 
 CACHE_FILE = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "utils", "riemann_zeros_1000.npy")
 

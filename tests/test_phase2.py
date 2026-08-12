@@ -1,9 +1,9 @@
 import numpy as np
 import pytest
-from riemann_sysid_advanced.kernel_era import KernelHankelSystemID
-from riemann_sysid_advanced.koopman_edmd import KoopmanAdeleEDMD
-from riemann_sysid_advanced.quantum_sysid import QuantumSystemIdentification
-from riemann_sysid_advanced.theoretical_proofs import TheoreticalProofsVerifier
+from trng_auditor.advanced.kernel_era import KernelHankelSystemID
+from trng_auditor.advanced.koopman_edmd import KoopmanAdeleEDMD
+from trng_auditor.advanced.quantum_sysid import QuantumSystemIdentification
+from trng_auditor.advanced.theoretical_proofs import TheoreticalProofsVerifier
 
 def test_kernel_era():
     k = np.arange(100)

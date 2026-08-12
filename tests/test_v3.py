@@ -1,8 +1,8 @@
 import numpy as np
 import pytest
-from riemann_sysid.data import generate_primes
-from riemann_sysid_v3.galois_koopman import GaloisKoopmanTomography, AdelicProductOperator
-from riemann_sysid_v3.rigorous_analysis import RigorousUnitarityAnalyzer
+from trng_auditor.core.data import generate_primes
+from trng_auditor.v3.galois_koopman import GaloisKoopmanTomography, AdelicProductOperator
+from trng_auditor.v3.rigorous_analysis import RigorousUnitarityAnalyzer
 
 def test_galois_koopman():
     primes = generate_primes(1000)

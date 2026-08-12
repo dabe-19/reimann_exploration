@@ -1,7 +1,7 @@
 import numpy as np
 import time
-from riemann_sysid.operator_wrapper import HilbertPolyaOperator
-from riemann_sysid.data import get_riemann_zeros
+from trng_auditor.core.operator_wrapper import HilbertPolyaOperator
+from trng_auditor.core.data import get_riemann_zeros
 
 def main():
     print("=" * 85)

@@ -1,9 +1,9 @@
 import numpy as np
 from scipy.linalg import eig, eigh
 from typing import Dict, Any, Tuple
-from riemann_sysid.data import von_mangoldt_sequence, pnt_error_term, logarithmic_resample, get_riemann_zeros
-from riemann_sysid.era_n4sid import HankelSystemID
-from riemann_sysid.spectral_estimation import ParametricSpectralEstimator
+from trng_auditor.core.data import von_mangoldt_sequence, pnt_error_term, logarithmic_resample, get_riemann_zeros
+from trng_auditor.core.era_n4sid import HankelSystemID
+from trng_auditor.core.spectral_estimation import ParametricSpectralEstimator
 
 class HilbertPolyaOperator:
     """

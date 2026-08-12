@@ -2,8 +2,8 @@ import os
 import time
 import numpy as np
 import matplotlib.pyplot as plt
-from riemann_sysid.data import generate_primes
-from riemann_sysid_v3 import GaloisKoopmanTomography, AdelicProductOperator, RigorousUnitarityAnalyzer
+from trng_auditor.core.data import generate_primes
+from trng_auditor.v3 import GaloisKoopmanTomography, AdelicProductOperator, RigorousUnitarityAnalyzer
 
 # Set high-quality plot aesthetic
 plt.style.use('seaborn-v0_8-darkgrid' if 'seaborn-v0_8-darkgrid' in plt.style.available else 'default')

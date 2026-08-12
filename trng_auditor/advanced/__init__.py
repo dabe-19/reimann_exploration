@@ -1,5 +1,5 @@
 """
-riemann_sysid_advanced: Advanced Operator Theory, Kernelized Subspace ID, Koopman EDMD, and Quantum System Identification
+trng_auditor.advanced: Advanced Operator Theory, Kernelized Subspace ID, Koopman EDMD, and Quantum System Identification
 """
 
 from .kernel_era import KernelHankelSystemID

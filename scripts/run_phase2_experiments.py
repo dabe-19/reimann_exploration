@@ -3,8 +3,8 @@ import time
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import LogNorm
-from riemann_sysid import generate_primes, von_mangoldt_sequence, get_riemann_zeros, HankelSystemID
-from riemann_sysid_advanced import (
+from trng_auditor.core import generate_primes, von_mangoldt_sequence, get_riemann_zeros, HankelSystemID
+from trng_auditor.advanced import (
     KernelHankelSystemID,
     KoopmanAdeleEDMD,
     QuantumSystemIdentification,

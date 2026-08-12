@@ -1,8 +1,8 @@
 import time
 import numpy as np
 import scipy.linalg
-from riemann_sysid.operator_wrapper import HilbertPolyaOperator
-from riemann_sysid.data import chebyshev_psi, generate_primes
+from trng_auditor.core.operator_wrapper import HilbertPolyaOperator
+from trng_auditor.core.data import chebyshev_psi, generate_primes
 
 def estimate_pi_from_psi(psi_val: float, x: float) -> float:
     """

@@ -1,9 +1,9 @@
 import numpy as np
 import time
 import matplotlib.pyplot as plt
-from riemann_sysid.data import generate_primes, von_mangoldt_sequence, chebyshev_psi, pnt_error_term, logarithmic_resample, get_riemann_zeros
-from riemann_sysid.era_n4sid import HankelSystemID
-from riemann_sysid.spectral_estimation import ParametricSpectralEstimator
+from trng_auditor.core.data import generate_primes, von_mangoldt_sequence, chebyshev_psi, pnt_error_term, logarithmic_resample, get_riemann_zeros
+from trng_auditor.core.era_n4sid import HankelSystemID
+from trng_auditor.core.spectral_estimation import ParametricSpectralEstimator
 
 def main():
     print("=" * 85)

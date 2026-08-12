@@ -1,7 +1,7 @@
 import numpy as np
 from typing import Dict, Any, List
-from riemann_sysid.data import generate_primes, von_mangoldt_sequence
-from riemann_sysid.era_n4sid import HankelSystemID
+from trng_auditor.core.data import generate_primes, von_mangoldt_sequence
+from trng_auditor.core.era_n4sid import HankelSystemID
 from .koopman_edmd import KoopmanAdeleEDMD
 
 class TheoreticalProofsVerifier:

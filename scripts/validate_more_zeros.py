@@ -2,9 +2,9 @@ import os
 import time
 import numpy as np
 import matplotlib.pyplot as plt
-from riemann_sysid.data import pnt_error_term, logarithmic_resample, get_riemann_zeros
-from riemann_sysid.spectral_estimation import ParametricSpectralEstimator
-from riemann_sysid.operator_wrapper import HilbertPolyaOperator
+from trng_auditor.core.data import pnt_error_term, logarithmic_resample, get_riemann_zeros
+from trng_auditor.core.spectral_estimation import ParametricSpectralEstimator
+from trng_auditor.core.operator_wrapper import HilbertPolyaOperator
 
 # Set high-quality plot aesthetic
 plt.style.use('seaborn-v0_8-darkgrid' if 'seaborn-v0_8-darkgrid' in plt.style.available else 'default')

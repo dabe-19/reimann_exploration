@@ -3,7 +3,7 @@ import time
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import LogNorm
-from riemann_sysid import (
+from trng_auditor.core import (
     generate_primes,
     von_mangoldt_sequence,
     chebyshev_psi,

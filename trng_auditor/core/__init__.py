@@ -1,5 +1,5 @@
 """
-riemann_sysid: System Identification & Parametric Spectral Analysis of Prime Signals & Riemann Zeros
+trng_auditor.core: System Identification & Parametric Spectral Analysis of Prime Signals & Riemann Zeros
 """
 
 from .data import generate_primes, von_mangoldt_sequence, chebyshev_psi, pnt_error_term, logarithmic_resample, get_riemann_zeros

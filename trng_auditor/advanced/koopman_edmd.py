@@ -1,7 +1,7 @@
 import numpy as np
 from scipy.linalg import eig, inv
 from typing import Dict, Any, Tuple, List, Optional
-from riemann_sysid.data import generate_primes, von_mangoldt_sequence, get_riemann_zeros
+from trng_auditor.core.data import generate_primes, von_mangoldt_sequence, get_riemann_zeros
 
 class KoopmanAdeleEDMD:
     """
